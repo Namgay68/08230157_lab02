@@ -1,0 +1,195 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background: #333;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== About Me Picture ===== */
+.profile-pic {
+  width: 150px;           /* Bigger for About Me */
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #333;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Home Page Image ===== */
+.home-img {
+  width: 200px;           /* Smaller for Home */
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 4px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.home-img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Section Styling ===== */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+}
+
+/* ===== Page Backgrounds ===== */
+.home-page { background-color: #cce7ff; }
+.about-page { background-color: #fff3cd; }
+.education-page { background-color: #d4edda; }
+.skills-page { background-color: #f8d7da; }
+.projects-page { background-color: #e2e3e5; }
+.contact-page { background-color: #f0f0f0; }
+
+/* ===== Education Images ===== */
+.edu-img {
+  width: 300px;           /* Default size for education images */
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0 30px 0;
+  border: 3px solid #333;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
+.edu-img:hover {
+  transform: scale(1.05);
+}
+
+/* Smaller image specifically for Orong Central School */
+.edu-small {
+  width: 150px;           /* Smaller size */
+  max-width: 90%;
+  height: auto;
+}
+
+.edu-item {
+  margin-bottom: 40px;
+}
+
+/* ===== Project Cards ===== */
+.project {
+  background: #fff;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Contact Form ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+form input, form textarea, form button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #00aaff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #0077cc;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .home-img {
+    width: 90%;
+  }
+
+  .edu-img, .edu-small {
+    width: 90%;
+  }
+
+  .project {
+    width: 90%;
+  }
+}
